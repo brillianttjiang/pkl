@@ -1,0 +1,64 @@
+<html>
+<head>
+	<link href="css/bootstrap.min.css" rel="stylesheet"> 
+	<style type="text/css">
+		.blkg{
+			background-color: lavender;
+		} 
+	</style>
+	<script>
+function myFunction() {
+    var x = document.getElementById("pass");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+</script>
+
+</head>
+<body align=center style="background-image:url(bg.jpg);background-repeat: no-repeat;background-size: 1366px 768px;">
+	<h1>
+		<b>PT. PANGESTU FARMINDO MULIATAMA</b>
+	</h1>
+	<br>
+	<div class="col-lg-4 col-lg-offset-4 blkg">
+		<h3>Register</h3>
+		<form method="post" action="pklregis.php">
+			<br>
+			<br>
+			Username
+			<br>
+			<input class="form-control" type="text" name="user">
+			<br>
+			Nama
+			<br>
+			<input class="form-control" type="text" name="name">
+			<br>
+			Password
+			<br>
+			<input class="form-control" type="password" name="pass" id="pass">
+			<input type="checkbox" onclick="myFunction()">Show Password
+			<br>
+			Alamat
+			<br>
+			<input class="form-control" type="text" name="alamat">
+			<br>
+			No Telp
+			<br>
+			<input class="form-control" type="text" name="notelp">
+			<br>
+			NPWP
+			<br>
+			<input class="form-control" type="text" name="npwp">
+			<br>
+			<button class="btn btn-primary" type="submit">Register</button>
+			<button class="btn btn-default" type="reset">Clear</button>
+			<br>
+			Sudah terdaftar? Login <a href="pkllogin.html">disini</a>
+		</form>
+
+	</div>
+</body>
+</html>
